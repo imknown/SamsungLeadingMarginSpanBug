@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="net.imknown.android.samsungleadingmarginspanbug">
 
-    <application android:label="SamsungLeadingMarginSpanBug">
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="SamsungLeadingMarginSpanBug">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
