@@ -13,6 +13,8 @@ import java.util.Locale;
 
 public class MainActivity extends Activity {
 
+    private TextView tv;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +23,9 @@ public class MainActivity extends Activity {
 
         setContentView(R.layout.activity_main);
 
-        initView();
+        tv = findViewById(R.id.tv);
+
+        setText();
     }
 
     private void initLocale(Locale locale) {
@@ -32,8 +36,10 @@ public class MainActivity extends Activity {
         resources.updateConfiguration(config, resources.getDisplayMetrics());
     }
 
-    private void initView() {
-        TextView tv = findViewById(R.id.tv);
+    private void setText() {
+        String currentLocaleLanguageTag = Locale.getDefault().getDisplayName();
+        getActionBar().setTitle(currentLocaleLanguageTag);
+
         CharSequence text = tv.getText();
         SpannableString spannableString = new SpannableString(text);
         LeadingMarginSpan lms = new LeadingMarginSpan.Standard(100, 0);
