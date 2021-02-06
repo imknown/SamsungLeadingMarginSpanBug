@@ -1,6 +1,6 @@
 # LeadingMarginSpan bug in JP or KR Locale on OneUI
-> https://developer.samsung.com/dashboard/support/31085  
-> https://forum.developer.samsung.com/t/leadingmarginspan-bug-in-jp-or-kr-locale-on-oneui/11105
+> - https://developer.samsung.com/dashboard/support/31085  
+> - https://forum.developer.samsung.com/t/leadingmarginspan-bug-in-jp-or-kr-locale-on-oneui/11105
 
 Go to the "Language" page in the "Settings".  
 Make sure **ONLY ONE** Japanese or Korean is in the language list.  
