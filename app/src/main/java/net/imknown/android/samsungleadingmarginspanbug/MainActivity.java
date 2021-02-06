@@ -17,15 +17,14 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        initKoreanLocale();
+//        initLocale(Locale.KOREAN);
 
         setContentView(R.layout.activity_main);
 
         initView();
     }
 
-    private void initKoreanLocale() {
-        Locale locale = new Locale(Locale.KOREAN.getLanguage());
+    private void initLocale(Locale locale) {
         Locale.setDefault(locale);
         Resources resources = getResources();
         Configuration config = resources.getConfiguration();
