@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.LeadingMarginSpan;
+import android.util.TypedValue;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -42,7 +43,10 @@ public class MainActivity extends Activity {
 
         CharSequence text = tv.getText();
         SpannableString spannableString = new SpannableString(text);
-        LeadingMarginSpan lms = new LeadingMarginSpan.Standard(100, 0);
+        int the170dp = (int) TypedValue.applyDimension(
+                TypedValue.COMPLEX_UNIT_DIP, 170, getResources().getDisplayMetrics()
+        );
+        LeadingMarginSpan lms = new LeadingMarginSpan.Standard(the170dp, 0);
         spannableString.setSpan(lms, 0, text.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         tv.setText(spannableString);
     }

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/tv"
     android:layout_width="200dp"
     android:layout_height="wrap_content"
     android:background="#00AAFF"
-    android:text="1111111111111111111111111111111111111111111111111111111111111111111" />
+    android:text="連体修飾格として諸種の関係を表す。"
+    tools:ignore="HardcodedText" />
